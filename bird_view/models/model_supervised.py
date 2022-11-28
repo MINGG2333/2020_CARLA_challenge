@@ -50,7 +50,7 @@ class Model_Segmentation_Traffic_Light_Supervised(nn.Module):
             self.size_state_RL = 6144
         else:
             self.size_state_RL = 8192
-        resnet18 = models.resnet18(pretrained=False)
+        resnet18 = models.resnet18()
 
         # See https://arxiv.org/abs/1606.02147v1 section 4: Information-preserving
         # dimensionality changes

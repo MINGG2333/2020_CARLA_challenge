@@ -64,7 +64,6 @@ class DQN(nn.Module):
         self.action_space = action_space
         self.history_length = len(args.steps_image)
         self.device = args.device
-        self.disable_cuda = args.disable_cuda
 
         self.magic_number_repeat_scaler_in_fc = 10
 
