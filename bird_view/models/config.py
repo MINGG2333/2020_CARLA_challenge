@@ -5,7 +5,7 @@ import torch
 class GlobalConfig:
     """ base architecture configurations """
     # refer to https://github.com/valeoai/LearningByCheating/blob/master/benchmark_agent.py
-    path_folder_model = '../2020_CARLA_challenge/model_RL_IAs_CARLA_Challenge/'
+    path_folder_model = '../MaRLn_CARLA_challenge/model_RL_IAs_CARLA_Challenge/'
 
     nb_action_steering = 27
     max_steering = 0.6

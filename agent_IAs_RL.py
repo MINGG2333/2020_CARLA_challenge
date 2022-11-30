@@ -231,10 +231,10 @@ class AgentIAsRL(BaseAgent):
             rgb = np.array(rgb)[120:, :, :]
         else:
             rgb = np.array(rgb)
-        if self.config.render:
-            bgr = rgb[:, :, ::-1]
-            cv2.imshow("network input", bgr)
-            cv2.waitKey(1)
+        # if self.config.render:
+        #     bgr = rgb[:, :, ::-1]
+        #     cv2.imshow("network input", bgr)
+        #     cv2.waitKey(1)
 
         rgb = np.rollaxis(rgb, 2, 0)
         self.RGB_image_buffer.append(rgb)
